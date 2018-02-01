@@ -1,0 +1,246 @@
+div {
+    /*text-align: center;*/
+    width: 100%;
+    box-sizing: border-box;
+    /*padding: 10px;*/
+}
+
+h1 {
+    font-family: "Arial";
+}
+
+h2 {
+    font-family: "Arial";
+}
+
+nav ul {
+    display: block;
+    margin: auto;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(34, 32, 32);
+}
+
+.center {
+    text-align: center;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /*height: 100%;*/
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Arial";
+    margin: 0;
+    /*line-height: 40px;*/
+}
+
+nav li a:hover, .dropdown:hover .dropbtn, .dropdown:hover .dropbtn_active {
+    background-color: rgb(23, 156, 23);
+    cursor: pointer;
+}
+
+nav .active {
+    background-color: rgb(3, 65, 6);
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Arial";
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown .dropbtn_active {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Arial";
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: rgb(3, 65, 6);
+    cursor: pointer;
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: auto;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: large;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.portfolio {
+    display: grid;
+    margin: auto;
+    padding: 10px;
+    grid-template: auto auto / 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: auto;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 75%;
+    margin-left: 12.5%;
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "side main"
+        "foot foot";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 81.5% auto;
+    grid-gap: 25px;
+}
+
+.container_index {
+    width: 75%;
+    margin-left: 12.5%;
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "side main"
+        "foot foot";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 85% auto;
+    grid-gap: 25px;
+}
+
+.header {
+    grid-area: head;
+    background-color: white;
+    height: 100%;
+}
+
+.sidebar {
+    grid-area: side;
+    background-color: grey;
+}
+
+.sidebar p {
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.sidebar h1 {
+    text-align: center;
+}
+
+.sidebar h2 {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.sidebar img {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightskyblue;
+    min-height: 550px;
+}
+
+.history {
+    padding: 20px;
+}
+
+.footer {
+    grid-area: foot;
+    /*background-color: rgb(201, 124, 124);*/
+    background-color: lightskyblue; 
+    height: 100%;
+    text-align: center;
+}
+
+.footer_index {
+    grid-area: foot;
+    /*background-color: rgb(201, 124, 124);*/
+    background-color: lightskyblue; 
+    height: 100%;
+    text-align: center;
+}
+
+.footer h1 {
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.contact {
+    margin: 20px;
+    padding: 0
+}
